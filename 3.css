@@ -1,0 +1,470 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px; 
+    overflow: hidden;
+} 
+* {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-transform: uppercase;
+}
+button {
+    cursor: pointer;
+}
+.disabled {
+    opacity: 0.5;
+}
+.rotated {
+    transform: rotate(15deg);
+}
+.glass-effect {
+    backdrop-filter: blur(5px);
+}
+.delayed-effect {
+    transition-delay: 0.2s;
+}
+
+
+header {
+    background-color: lightsalmon;
+    color: black;
+    padding: 20px 0;
+    text-align: center; 
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: navy;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#about .bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: zoomIn 1s ease-in-out forwards;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+#about p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+#skills {
+    background-color: white;
+    padding: 20px 20px;
+}
+
+#skills h2 {
+    font-size: 2.8rem;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    width: 45%;
+    margin: 20px 0;
+}
+
+.skill-item h3 {
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 25px;
+    margin-top: 10px;
+    transition: width 0.3s ease;
+}
+
+.skill-bar .progress {
+    height: 100%;
+    background-color: darkblue;
+    border-radius: 25px;
+    width: 0%;
+}
+
+.skill-bar .progress.animated {
+    width: 80%;
+}
+
+#projects h2 {
+    font-size: 2.8rem;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    text-align: center;
+    margin: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: rotateIn 1s ease-in-out;
+}
+
+.project-item img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    animation: fadeSlideIn 1s ease-in-out;
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-item a:hover {
+    background-color: lightgray;
+}
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.timeline li {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: black;
+    color: grey;
+    padding: 20px 3px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-media h2 {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    transition: opacity 0.3s ease;
+}
+
+.social-media a:hover img {
+    opacity: 0.7;
+}
+
+#contact {
+    background-color: #f4f4f4;
+    padding: 20px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#contact .container {
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.8rem;
+    color: black;
+    margin-bottom: 30px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactForm label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#contactForm button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: navy;
+}
+
+#education {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#education h2 {
+    font-size: 2.8rem;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-item {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-detail {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.education-detail h3 {
+    margin-bottom: 5px;
+}
+
+.education-detail p {
+    margin: 0;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .education-container {
+        padding: 20px;
+    }
+
+    .education-list {
+        margin-bottom: 20px;
+    }
+
+    .skill-item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 790px) {
+    .skill-item {
+        width: 22%;
+    }
+}
+
+.window-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.window-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
